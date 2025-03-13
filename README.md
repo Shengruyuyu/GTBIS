@@ -2,7 +2,7 @@
 
 ## Introduction
 ![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Images_Figure1B.png)
-*study design*
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *study design*
 
 ## Datasets
 - ​`clinical_data`: Contains three-cohort clinical metadata including patient categories, overall survival time/status, and disease-free survival time/status
@@ -11,7 +11,7 @@
 
 ## Model Overview
 ![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Images_Figure1C.png)
-*Overview of model architecture*
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Overview of model architecture*
 
 ## Installation
 ```bash
@@ -40,6 +40,6 @@ cd your-repo-name
   python main_oriTrain.py
   ```
   Before running `main_oriTrain.py`, obtain the model's attention scores for each patch and save them in a `.csv` file. When `main_oriTrain.py` is executed, it will read the `.csv` file and integrate the deep features from the UNI feature     extractor to generate the final "pixel-level" heatmap.
+  ![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/images_Figure2D.png)
   
-  
-  *Morphological characteristics visualization*
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; *Morphological characteristics visualization*
