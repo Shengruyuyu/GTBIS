@@ -1,9 +1,8 @@
 # Deep Learning-Based Histomorphological Reclassification and Risk Stratification of Combined Small-Cell and Large-Cell Neuroendocrine Carcinomas
 
 ## Introduction
-[...]
-
-*Morphological characteristics visualization*
+![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Images_Figure1B.png)
+*study design*
 
 ## Datasets
 - ​`clinical_data`: Contains three-cohort clinical metadata including patient categories, overall survival time/status, and disease-free survival time/status
@@ -11,9 +10,8 @@
 - ​`patches`: 224×224 pixel patches generated from WSIs at 5× magnification
 
 ## Model Overview
-[...]
-
-*Schematic diagram of multimodal deep learning framework*
+![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Images_Figure1C.png)
+*Overview of model architecture*
 
 ## Installation
 ```bash
@@ -42,6 +40,6 @@ cd your-repo-name
   python main_oriTrain.py
   ```
   Before running `main_oriTrain.py`, obtain the model's attention scores for each patch and save them in a `.csv` file. When `main_oriTrain.py` is executed, it will read the `.csv` file and integrate the deep features from the UNI feature     extractor to generate the final "pixel-level" heatmap.
-  [...]
   
-  *heatmap examples*
+  
+  *Morphological characteristics visualization*
