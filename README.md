@@ -26,7 +26,7 @@ cd your-repo-name
   ```bash
   python src/tile_WSI.py
   ```
-  Configure mandatory parameters in script headers for your use case
+  Run src/tile_WSI.py and configure mandatory parameters in script headers for your use case.
 - ### ​Extract patch feature and build graphs
   ```bash
   python feature_extractor_U/build_graphs.py
