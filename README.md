@@ -3,8 +3,7 @@
 ## Introduction
 [...]
 
-**Figure 1.b** 
-*(Morphological characteristics visualization)*
+*Morphological characteristics visualization*
 
 ## Datasets
 - ​`clinical_data`: Contains three-cohort clinical metadata including patient categories, overall survival time/status, and disease-free survival time/status
@@ -12,7 +11,9 @@
 - ​`patches`: 224×224 pixel patches generated from WSIs at 5× magnification
 
 ## Model Overview
-**Figure 1.c** *(Schematic diagram of multimodal deep learning framework)*
+[...]
+
+*Schematic diagram of multimodal deep learning framework*
 
 ## Installation
 ```bash
@@ -41,3 +42,6 @@ cd your-repo-name
   python main_oriTrain.py
   ```
   Before running `main_oriTrain.py`, obtain the model's attention scores for each patch and save them in a `.csv` file. When `main_oriTrain.py` is executed, it will read the `.csv` file and integrate the deep features from the UNI feature     extractor to generate the final "pixel-level" heatmap.
+  [...]
+  
+  *heatmap examples*
