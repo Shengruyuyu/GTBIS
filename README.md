@@ -20,7 +20,7 @@ cd your-repo-name
 ## Usage
 - ### ​Tiling patch
   ```bash
-  python src/tile_WSI.py
+  python tile_WSI.py
   ```
   Run src/tile_WSI.py and configure mandatory parameters in script headers for your use case.
 - ### ​Extract patch feature and build graphs
