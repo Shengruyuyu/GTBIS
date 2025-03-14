@@ -12,11 +12,18 @@
 ![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Images_Figure1C.png#pic_center)
 
 ## Installation
+- ### Download and open our repository
 ```bash
 git clone https://......
 cd your-repo-name
 ```
-
+- ### Install dependencies
+```bash
+conda create -n youre_env_name python=3.8 -y
+conda activate your_env_name
+pip install requirement.txt
+```
+  
 ## Usage
 - ### ​Tiling patch
   ```bash
