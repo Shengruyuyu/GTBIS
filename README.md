@@ -45,4 +45,4 @@ cd your-repo-name
   </div>
 
 - ### Web-based platform
-
+Click and access our free open platform at [http://lungnecrisk.com](http://lungnecrisk.com) to upload WSI and receive results.
