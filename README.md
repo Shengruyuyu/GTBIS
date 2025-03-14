@@ -25,9 +25,9 @@ cd your-repo-name
   Run src/tile_WSI.py and configure mandatory parameters in script headers for your use case.
 - ### ​Extract patch feature and build graphs
   ```bash
-  python feature_extractor_U/build_graphs.py
+  python build_graphs.py
   ```
-  Go to `./feature_extractor_U` to use the UNI feature extractor for extracting patch features and constructing graphs. You can replace the feature extractor as needed by modifying the relevant section in `./feature_extractor_U/build_graphs.py`.
+  Go to `build_graphs.py` to use the UNI feature extractor for extracting patch features and constructing graphs. You can replace the feature extractor as needed by modifying the relevant section in `build_graphs.py`.
 - ### ​Model Training
   ```bash
   python main_oriTrain.py
