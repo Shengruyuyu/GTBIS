@@ -33,11 +33,15 @@ cd your-repo-name
   python main_oriTrain.py
   ```
   Run this script to train the model and automatically save it to the specified path.
+- ### ​Model Test
+  ```bash
+  python main_test_orVisual.py
+  ```
 - ### ​Interpretability
   ```bash
-  python main_oriTrain.py
+  python visualisation_sry_ver2.py
   ```
-  Before running `main_oriTrain.py`, obtain the model's attention scores for each patch and save them in a `.csv` file. When `main_oriTrain.py` is executed, it will read the `.csv` file and integrate the deep features from the UNI feature     extractor to generate the final "pixel-level" heatmap.
+  Before running `visualisation_sry_ver2.py`, obtain the model's attention scores for each patch and save them in a `.csv` file. When `visualisation_sry_ver2.py` is executed, it will read the `.csv` file and integrate the deep features from the UNI feature extractor to generate the final "pixel-level" heatmap.
   <div align="center">
     <img src="https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/images_Figure2D.png" 
          width="70%" 
