@@ -44,5 +44,5 @@ cd your-repo-name
          style="transform-origin: center; display: block; margin: auto;">
   </div>
 
-- ### Web-based platform
+## Web-based platform
 Click and access our free open platform at [http://lungnecrisk.com](http://lungnecrisk.com) to upload WSI and receive results.
