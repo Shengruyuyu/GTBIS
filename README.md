@@ -48,7 +48,7 @@ pip install requirement.txt
   ```bash
   python visualisation.py
   ```
-  Before running `visualisation_sry_ver2.py`, obtain the model's attention scores for each patch and save them in a `.csv` file. When `visualisation_sry_ver2.py` is executed, it will read the `.csv` file and integrate the deep features from the UNI feature extractor to generate the final "pixel-level" heatmap.
+  Before running `visualisation.py`, obtain the model's attention scores for each patch and save them in a `.csv` file. When `visualisation.py` is executed, it will read the `.csv` file and integrate the deep features from the UNI feature extractor to generate the final "pixel-level" heatmap.
   <div align="center">
     <img src="https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/images_Figure2D.png" 
          width="70%" 
