@@ -1,7 +1,7 @@
 # Deep Learning-Based Histomorphological Reclassification and Risk Stratification of Combined Small-Cell and Large-Cell Neuroendocrine Carcinomas
 
 ## Introduction
-![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Images_Figure1B.png#pic_center)
+![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Figure1B.png#pic_center)
 
 ## Datasets
 - ​`clinical_data`: Contains three-cohort clinical metadata including patient categories, overall survival time/status, and disease-free survival time/status
