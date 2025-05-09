@@ -48,7 +48,8 @@ pip install requirement.txt
   ```bash
   python visualisation.py
   ```
-  Before running `visualisation.py`, obtain the model's attention scores for each patch and save them in a `.csv` file. When `visualisation.py` is executed, it will read the `.csv` file and integrate the deep features from the UNI feature extractor to generate the final "pixel-level" heatmap.
+  Before running visualisation.py, obtain the attention scores for each patch from the model and save them in a .csv file. The CSV should contain N rows and 2 columns (N = number of patches + 1), with the first row containing the headers: "patch_name" and "attention". When visualisation.py is executed, it will read the CSV file and combine the attention scores with deep features extracted by the UNI feature extractor to generate a final pixel-level heatmap.
+Note: Prior to executing python visualisation.py, ensure that the Pillow package is upgraded to version 9.5.0, and the timm package is upgraded to version 1.0.15.
   <div align="center">
     <img src="https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/images_Figure2D.png" 
          width="70%" 
