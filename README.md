@@ -9,7 +9,7 @@
 - ​`patches`: 224×224 pixel patches generated from WSIs at 5× magnification
 
 ## Model Overview
-![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Images_Figure1C.png#pic_center)
+![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Figure1C.png#pic_center)
 
 ## Installation
 - ### Download and open our repository
