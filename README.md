@@ -1,4 +1,4 @@
-# Deep Learning-Based Histomorphological Reclassification and Risk Stratification of Combined Small-Cell and Large-Cell Neuroendocrine Carcinomas
+# Deep Learning-Based Histomorphological Reclassification and treatment decision optimization for Combined Small Cell and Large Cell Lung Neuroendocrine Carcinomas
 
 ## Introduction
 ![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Figure1B.png#pic_center)
