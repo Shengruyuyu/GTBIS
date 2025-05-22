@@ -58,8 +58,3 @@ Note: Prior to executing python visualisation.py, ensure that the Pillow package
 
 ## Web-based platform
 Click and access our free open platform at [http://lungnecrisk.com](http://lungnecrisk.com) to upload WSI and receive results.
-<div align="center">
-  <img src="https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/images_FigureS04.png" 
-       width="70%" 
-       style="transform-origin: center; display: block; margin: auto;">
-</div>
