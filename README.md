@@ -62,7 +62,7 @@ pip install requirement.txt
   - #### Step Inputs: 
     TXT format files for validation: e.g.: ​`external.txt​`.
     The path where the patch features of the graph structure used for validation: e.g.: ​`results/features​`.
-    The storage path for the best model: ​`resume​` parameter.
+    The storage path for the best model: You can configure the output location of the best model with the ​`resume​` parameter.
   - #### Step Outputs:
     The model with the best performance on the internal validation set: stored in the path corresponding to the --model_path parameter.
     Training logs: are stored in the path corresponding to the ​`log_path parameter​`.
@@ -70,8 +70,14 @@ pip install requirement.txt
   ```bash
   python visualisation.py
   ```
-  Before running visualisation.py, obtain the attention scores for each patch from the model and save them in a .csv file. The CSV should contain N rows and 2 columns (N = number of patches + 1), with the first row containing the headers: "patch_name" and "attention". When visualisation.py is executed, it will read the CSV file and combine the attention scores with deep features extracted by the UNI feature extractor to generate a final pixel-level heatmap.
-Note: Prior to executing python visualisation.py, ensure that the Pillow package is upgraded to version 9.5.0, and the timm package is upgraded to version 1.0.15.
+  Note: Prior to executing python visualisation.py, ensure that the Pillow package is upgraded to version 9.5.0, and the timm package is upgraded to version 1.0.15.
+  - #### Step Inputs: 
+    CSV format files for attention scores for each patch from the model: The CSV should contain N rows and 2 columns (N = number of patches + 1), with the first row containing the headers: "patch_name" and "attention". e.g.: ​`data_demo/WSI1_attention_score.csv`.
+    The path where the patch features of the graph structure used for validation: e.g.: ​`results/features​`.
+    pathology foundation model: e.g.: ​`https://github.com/mahmoodlab/UNI​`.
+    The storage path for the best model: ​`resume​` parameter.
+  - #### Step Outputs:
+    Attention heatmap results: e.g.: ​`https://github.com/mahmoodlab/UNI​`.
   <div align="center">
     <img src="https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Figure2D.png" 
          width="70%" 
