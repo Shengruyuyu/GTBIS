@@ -29,8 +29,8 @@ pip install requirement.txt
   ```bash
   python tile_WSI.py
   ```
-  - #### Step Inputs:
-    
+  - #### Step Inputs: 
+    WSI path: You need to set the path to store your WSI in the "slidepath" parameter on line 700 of the code.
   - #### Step Outputs:
   Run src/tile_WSI.py and configure mandatory parameters in script headers for your use case.
 ### 2. ​Extract patch feature and build graphs
