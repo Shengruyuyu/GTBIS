@@ -29,6 +29,8 @@ pip install requirement.txt
   ```bash
   python tile_WSI.py
   ```
+  #### Step Inputs:
+  #### Step Outputs:
   Run src/tile_WSI.py and configure mandatory parameters in script headers for your use case.
 - ### ​Extract patch feature and build graphs
   ```bash
