@@ -49,35 +49,50 @@ pip install requirement.txt
   ```
   Run this script to train the model and automatically save it to the specified path.
   - #### Step Inputs: 
-    TXT format file for cross-validation for model training: e.g.: ​`dataset/train_val_txt/train_1.txt​`.   
-    TXT format files for cross-validation for model validation: e.g.: ​`dataset/train_val_txt/val_1.txt​`.   
-    Patch feature path: e.g.: ​`results/features​`.   
+    TXT format file for cross-validation for model training: e.g.: ​`dataset/train_val_txt/train_1.txt​`.
+    
+    TXT format files for cross-validation for model validation: e.g.: ​`dataset/train_val_txt/val_1.txt​`.
+    
+    Patch feature path: e.g.: ​`results/features​`.
+    
   - #### Step Outputs:
-    The model with the best performance on the internal validation set: stored in the path corresponding to the --model_path parameter.   
+    The model with the best performance on the internal validation set: stored in the path corresponding to the --model_path parameter.
+    
     Training logs: are stored in the path corresponding to the ​`log_path parameter​`.
+    
 ### 4. ​Model Test
   ```bash
   python main_test_orVisual.py
   ```
   - #### Step Inputs: 
-    TXT format files for validation: e.g.: ​`data_demo/external.txt​`.   
-    The path where the patch features of the graph structure used for validation: e.g.: ​`results/features​`.    
+    TXT format files for validation: e.g.: ​`data_demo/external.txt​`.
+    
+    The path where the patch features of the graph structure used for validation: e.g.: ​`results/features​`.
+    
     The storage path for the best model: You can configure the output location of the best model with the ​`resume​` parameter.
+    
   - #### Step Outputs:
-    The model with the best performance on the internal validation set: Stored in the path corresponding to the ​`model_path​` parameter.   
-    Training logs: Stored in the path corresponding to the ​`log_path​` parameter​.   
+    The model with the best performance on the internal validation set: Stored in the path corresponding to the ​`model_path​` parameter.
+    
+    Training logs: Stored in the path corresponding to the ​`log_path​` parameter​.
+    
 ### 5. ​Interpretability
   ```bash
   python visualisation.py
   ```
   Note: Prior to executing python visualisation.py, ensure that the Pillow package is upgraded to version 9.5.0, and the timm package is upgraded to version 1.0.15.
   - #### Step Inputs: 
-    CSV format files for attention scores for each patch from the model: The CSV should contain N rows and 2 columns (N = number of patches + 1), with the first row containing the headers: "patch_name" and "attention". e.g.: ​`data_demo/WSI1_attention_score.csv`.   
-    The path where the patch features of the graph structure used for validation: e.g.: ​`results/features​`.   
-    Pathology foundation model: e.g.: ​`https://github.com/mahmoodlab/UNI​`.   
-    The storage path for the best model: ​`resume​` parameter.   
+    CSV format files for attention scores for each patch from the model: The CSV should contain N rows and 2 columns (N = number of patches + 1), with the first row containing the headers: "patch_name" and "attention". e.g.: ​`data_demo/WSI1_attention_score.csv`.
+    
+    The path where the patch features of the graph structure used for validation: e.g.: ​`results/features​`.
+    
+    Pathology foundation model: e.g.: ​`https://github.com/mahmoodlab/UNI​`.
+    
+    The storage path for the best model: ​`resume​` parameter.
+    
   - #### Step Outputs:
-    Attention heatmap results: e.g.: ​`https://github.com/mahmoodlab/UNI​`.   
+    Attention heatmap results: e.g.: ​`https://github.com/mahmoodlab/UNI​`.
+    
   <div align="center">
     <img src="https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Figure2D.png" 
          width="70%" 
