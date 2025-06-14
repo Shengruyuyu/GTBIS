@@ -42,7 +42,7 @@ pip install requirement.txt
   - #### Step Inputs: 
     Patch path: You need to set the path to store your patches in the ​`dataset​` parameter.
   - #### Step Outputs:
-    Patch features of the graph structure: Configure the storage path of features using the ​`output​` parameter. Each WSI feature folder corresponds to three subfiles: the patch feature file features.pt that stores the WSI, the adjacency       matrix of the patch adj_s.pt, and the coordinate file of the patch c_idx.txt.
+    Patch features of the graph structure: Configure the storage path of features using the ​`output​` parameter. Each WSI feature folder corresponds to three subfiles: the patch feature file features.pt that stores the WSI, the adjacency matrix of the patch adj_s.pt, and the coordinate file of the patch c_idx.txt.
 ### 3. ​Model Training
   ```bash
   python main_oriTrain.py
