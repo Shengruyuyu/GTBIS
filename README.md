@@ -4,9 +4,9 @@
 ![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Figure1B.png#pic_center)
 
 ## Datasets
-- ​`clinical_data`: Including patient categories, overall survival time/status, and disease-free survival time/status
-- ​`WSIs`: Whole-slide images from three independent cohorts
-- ​`patches`: 224×224 pixel patches generated from WSIs at 5× magnification
+- ​`clinical_data`: Including patient categories, overall survival time/status, and disease-free survival time/status.
+- ​`WSIs`: H&E-stained whole-slide images.
+- ​`patches`: 224×224 pixel patches generated from WSIs at 5× magnification.
 
 ## Model Overview
 ![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Figure1C.png#pic_center)
