@@ -12,12 +12,12 @@
 ![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Figure1C.png#pic_center)
 
 ## Installation
-- ### Download and open our repository
+### 1. Download and open our repository
 ```bash
 git clone https://......
 cd your-repo-name
 ```
-- ### Install dependencies
+### 2. Install dependencies
 ```bash
 conda create -n youre_env_name python=3.8 -y
 conda activate your_env_name
