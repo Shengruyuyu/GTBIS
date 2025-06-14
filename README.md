@@ -40,7 +40,7 @@ pip install requirement.txt
   ```
   Go to `build_graphs.py` to use the UNI feature extractor for extracting patch features and constructing graphs. You can replace the feature extractor as needed by modifying the relevant section in `build_graphs.py`.
   - #### Step Inputs: 
-    patch path: You need to set the path to store your patches in the --dataset parameter.
+    Patch path: You need to set the path to store your patches in the --dataset parameter.
   - #### Step Outputs:
     Patch features of the graph structure:Configure the storage path of features using the "--output" parameter. Each WSI feature folder corresponds to three subfiles: the patch feature file features.pt that stores the WSI, the adjacency       matrix of the patch adj_s.pt, and the coordinate file of the patch c_idx.txt.
 ### 3. ​Model Training
@@ -48,6 +48,13 @@ pip install requirement.txt
   python main_oriTrain.py
   ```
   Run this script to train the model and automatically save it to the specified path.
+  - #### Step Inputs: 
+    TXT format file for cross-validation for model training: e.g.: -- dataset/train_val_txt/train_1.txt
+    TXT format files for cross-validation for model validation: e.g.: --dataset/train_val_txt/val_1.txt
+    Patch feature path: e.g.: --results/features
+  - #### Step Outputs:
+    The model with the best performance on the internal validation set: stored in the path corresponding to the --model_path parameter;
+    Training logs: are stored in the path corresponding to the --log_path parameter.
 ### 4. ​Model Test
   ```bash
   python main_test_orVisual.py
