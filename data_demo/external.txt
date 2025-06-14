@@ -1,0 +1,2 @@
+slide6_5xTiles	PS
+slide7_5xTiles	PL
