@@ -31,30 +31,30 @@ pip install requirement.txt
   ```
   Run src/tile_WSI.py and configure mandatory parameters in script headers for your use case.
   - #### Step Inputs: 
-    WSI path: You need to set the path to store your WSIs in the --slidepath parameter on line 700 of the code.
+    WSI path: You need to set the path to store your WSIs in the ​`slidepath​` parameter on line 700 of the code.
   - #### Step Outputs:
-    The patch file for each WSI: You can configure the output location of the patch with the --output parameter.
+    The patch file for each WSI: You can configure the output location of the patch with the ​`output​` parameter.
 ### 2. ​Extract patch feature and build graphs
   ```bash
   python build_graphs.py
   ```
   Go to `build_graphs.py` to use the UNI feature extractor for extracting patch features and constructing graphs. You can replace the feature extractor as needed by modifying the relevant section in `build_graphs.py`.
   - #### Step Inputs: 
-    Patch path: You need to set the path to store your patches in the --dataset parameter.
+    Patch path: You need to set the path to store your patches in the ​`dataset​` parameter.
   - #### Step Outputs:
-    Patch features of the graph structure:Configure the storage path of features using the "--output" parameter. Each WSI feature folder corresponds to three subfiles: the patch feature file features.pt that stores the WSI, the adjacency       matrix of the patch adj_s.pt, and the coordinate file of the patch c_idx.txt.
+    Patch features of the graph structure:Configure the storage path of features using the ​`output​` parameter. Each WSI feature folder corresponds to three subfiles: the patch feature file features.pt that stores the WSI, the adjacency       matrix of the patch adj_s.pt, and the coordinate file of the patch c_idx.txt.
 ### 3. ​Model Training
   ```bash
   python main_oriTrain.py
   ```
   Run this script to train the model and automatically save it to the specified path.
   - #### Step Inputs: 
-    TXT format file for cross-validation for model training: e.g.: -- dataset/train_val_txt/train_1.txt
-    TXT format files for cross-validation for model validation: e.g.: --dataset/train_val_txt/val_1.txt
-    Patch feature path: e.g.: --results/features
+    TXT format file for cross-validation for model training: e.g.: ​`dataset/train_val_txt/train_1.txt​`.
+    TXT format files for cross-validation for model validation: e.g.: ​`dataset/train_val_txt/val_1.txt​`.
+    Patch feature path: e.g.: ​`results/features​`.
   - #### Step Outputs:
-    The model with the best performance on the internal validation set: stored in the path corresponding to the --model_path parameter;
-    Training logs: are stored in the path corresponding to the --log_path parameter.
+    The model with the best performance on the internal validation set: stored in the path corresponding to the --model_path parameter.
+    Training logs: are stored in the path corresponding to the ​`log_path parameter​`.
 ### 4. ​Model Test
   ```bash
   python main_test_orVisual.py
