@@ -25,7 +25,7 @@ pip install requirement.txt
 ```
   
 ## Usage
-- ### ​Tiling patch
+### 1. ​Tiling patch
   ```bash
   python tile_WSI.py
   ```
