@@ -100,4 +100,7 @@ pip install requirement.txt
   </div>
 
 ## Web-based platform
-Click and access our free open platform at [http://lungnecrisk.com](http://lungnecrisk.com) to upload WSI and receive results.
+Click and access our free open platform at [http://lungnecrisk.com](http://lungnecrisk.com) to upload WSI and receive results.   
+
+
+- For further reference, you may also refer to our reference implementation available at: https://github.com/vkola-lab/tmi2022
