@@ -29,24 +29,24 @@ pip install requirement.txt
   ```bash
   python tile_WSI.py
   ```
-  #### Step Inputs:
-  #### Step Outputs:
+  - #### Step Inputs:
+  - #### Step Outputs:
   Run src/tile_WSI.py and configure mandatory parameters in script headers for your use case.
-- ### ​Extract patch feature and build graphs
+### 2. ​Extract patch feature and build graphs
   ```bash
   python build_graphs.py
   ```
   Go to `build_graphs.py` to use the UNI feature extractor for extracting patch features and constructing graphs. You can replace the feature extractor as needed by modifying the relevant section in `build_graphs.py`.
-- ### ​Model Training
+### 3. ​Model Training
   ```bash
   python main_oriTrain.py
   ```
   Run this script to train the model and automatically save it to the specified path.
-- ### ​Model Test
+### 4. ​Model Test
   ```bash
   python main_test_orVisual.py
   ```
-- ### ​Interpretability
+### 5. ​Interpretability
   ```bash
   python visualisation.py
   ```
