@@ -4,7 +4,7 @@
 ![image](https://github.com/Shengruyuyu/cSCLC-LCNEC/blob/main/images/Figure1B.png#pic_center)
 
 ## Datasets
-- ​`clinical_data`: Contains three-cohort clinical metadata including patient categories, overall survival time/status, and disease-free survival time/status
+- ​`clinical_data`: Including patient categories, overall survival time/status, and disease-free survival time/status
 - ​`WSIs`: Whole-slide images from three independent cohorts
 - ​`patches`: 224×224 pixel patches generated from WSIs at 5× magnification
 
@@ -29,7 +29,7 @@ pip install requirement.txt
   ```bash
   python tile_WSI.py
   ```
-  Run ​`src/tile_WSI.py​` and configure mandatory parameters in script headers for your use case.
+  Run ​`tile_WSI.py​` and configure mandatory parameters in script headers for your use case.
   - #### Step Inputs: 
     WSI path: You need to set the path to store your WSIs in the ​`slidepath​` parameter on line 700 of the code.
   - #### Step Outputs:
@@ -49,16 +49,16 @@ pip install requirement.txt
   ```
   Run this script to train the model and automatically save it to the specified path.
   - #### Step Inputs: 
-    TXT format file for cross-validation for model training: e.g.: ​`dataset/train_val_txt/train_1.txt​`.
+    TXT format file for cross-validation for model training: e.g.: ​`data_demo/train_1.txt​`.
     
-    TXT format files for cross-validation for model validation: e.g.: ​`dataset/train_val_txt/val_1.txt​`.
+    TXT format files for cross-validation for model validation: e.g.: ​`data_demo/val_1.txt​`.
     
     Patch feature path: e.g.: ​`results/features​`.
     
   - #### Step Outputs:
-    The model with the best performance on the internal validation set: stored in the path corresponding to the --model_path parameter.
+    The model with the best performance on the internal validation set: Stored in the path corresponding to the ​`model_path​` parameter.
     
-    Training logs: are stored in the path corresponding to the ​`log_path parameter​`.
+    Training logs: Stored in the path corresponding to the ​`log_path parameter​`.
     
 ### 4. ​Model Test
   ```bash
@@ -80,7 +80,7 @@ pip install requirement.txt
   ```bash
   python visualisation.py
   ```
-  Note: Prior to executing python visualisation.py, ensure that the Pillow package is upgraded to version 9.5.0, and the timm package is upgraded to version 1.0.15.
+  Note: Prior to executing python visualisation.py, ensure that the Pillow package is upgraded to version ​`9.5.0​`, and the timm package is upgraded to version ​`1.0.15​`.
   - #### Step Inputs: 
     CSV format files for attention scores for each patch from the model: The CSV should contain N rows and 2 columns (N = number of patches + 1), with the first row containing the headers: "patch_name" and "attention". e.g.: ​`data_demo/WSI1_attention_score.csv`.
     
